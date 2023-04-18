@@ -6,6 +6,8 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
+import SectionWrapper from "../hoc/SectionWrapper"
+
 const ServiceCard=({index,title,icon})=>{
   return (
     <Tilt className="xs:w-[280px] w-full">
@@ -49,7 +51,7 @@ const About = () => {
         real-world problems. Let's work together to bring your ideas to FJK life!
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap gap-10 justify-evenly">
         {
           services.map((service,index)=> (
             <ServiceCard
@@ -65,4 +67,4 @@ const About = () => {
   )
 }
 
-export default About
+export default SectionWrapper(About,"about")
