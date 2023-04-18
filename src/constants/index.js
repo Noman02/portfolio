@@ -4,25 +4,23 @@ import {
     creator,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
-    redux,
     tailwind,
+    bootstrap,
     nodejs,
     mongodb,
     git,
     figma,
-    docker,
     meta,
     starbucks,
     tesla,
     shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
+    tShirtDesign, 
+    crypto,
+    codeEditor,
+    
   } from "../assets";
   
   export const navLinks = [
@@ -69,20 +67,16 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
       name: "React JS",
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
       name: "Tailwind CSS",
       icon: tailwind,
+    },
+    {
+      name: "Bootstrap",
+      icon: bootstrap,
     },
     {
       name: "Node JS",
@@ -93,10 +87,6 @@ import {
       icon: mongodb,
     },
     {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
       name: "git",
       icon: git,
     },
@@ -104,68 +94,65 @@ import {
       name: "figma",
       icon: figma,
     },
-    {
-      name: "docker",
-      icon: docker,
-    },
+   
   ];
   
   // i do not need experiences
 
-  const experiences = [
-    {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-  ];
+  // const experiences = [
+  //   {
+  //     title: "React.js Developer",
+  //     company_name: "Starbucks",
+  //     icon: starbucks,
+  //     iconBg: "#383E56",
+  //     date: "March 2020 - April 2021",
+  //     points: [
+  //       "Developing and maintaining web applications using React.js and other related technologies.",
+  //       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //       "Implementing responsive design and ensuring cross-browser compatibility.",
+  //       "Participating in code reviews and providing constructive feedback to other developers.",
+  //     ],
+  //   },
+  //   {
+  //     title: "React Native Developer",
+  //     company_name: "Tesla",
+  //     icon: tesla,
+  //     iconBg: "#E6DEDD",
+  //     date: "Jan 2021 - Feb 2022",
+  //     points: [
+  //       "Developing and maintaining web applications using React.js and other related technologies.",
+  //       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //       "Implementing responsive design and ensuring cross-browser compatibility.",
+  //       "Participating in code reviews and providing constructive feedback to other developers.",
+  //     ],
+  //   },
+  //   {
+  //     title: "Web Developer",
+  //     company_name: "Shopify",
+  //     icon: shopify,
+  //     iconBg: "#383E56",
+  //     date: "Jan 2022 - Jan 2023",
+  //     points: [
+  //       "Developing and maintaining web applications using React.js and other related technologies.",
+  //       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //       "Implementing responsive design and ensuring cross-browser compatibility.",
+  //       "Participating in code reviews and providing constructive feedback to other developers.",
+  //     ],
+  //   },
+  //   {
+  //     title: "Full stack Developer",
+  //     company_name: "Meta",
+  //     icon: meta,
+  //     iconBg: "#E6DEDD",
+  //     date: "Jan 2023 - Present",
+  //     points: [
+  //       "Developing and maintaining web applications using React.js and other related technologies.",
+  //       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //       "Implementing responsive design and ensuring cross-browser compatibility.",
+  //       "Participating in code reviews and providing constructive feedback to other developers.",
+  //     ],
+  //   },
+  // ];
 
   // testimonials might be needed
   
@@ -200,16 +187,16 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "AI 3D PRODUCT T-SHIRT CUSTOMIZER",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Load, create, and customize stunning 3D models T-Shirt, and geometries with various lights, as well as understand the 3D world with a camera and the positioning of an object in space. Responsiveness across all devices",
       tags: [
         {
-          name: "react",
+          name: "react | threejs",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "framer-motion",
           color: "green-text-gradient",
         },
         {
@@ -217,51 +204,53 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: tShirtDesign,
+      source_code_link: "https://github.com/Noman02/ai-3d-threejs-project",
+      live_link: "https://ai-3d-project.netlify.app/"
     },
     {
-      name: "Job IT",
+      name: "CRYPTO HUB",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "The purpose of this website is to provide users with information and tools related to digital currencies, such as Bitcoin, Ethereum, and others. This websites typically offer real-time price data, news and analysis, trading platforms, and manage cryptocurrencies. such as how to get started with buying and storing digital assets. Ultimately, the purpose of a the website is to serve as a one-stop-shop for all things related to cryptocurrencies and blockchain technology.",
       tags: [
         {
-          name: "react",
+          name: "redux toolkit | ant design",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "rapidApi",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "chart.js",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: crypto,
+      source_code_link: "https://github.com/Noman02/cryptoverse",
+      live_link: "https://crypto-hub-react.netlify.app/ "
     },
     {
-      name: "Trip Guide",
+      name: "ONLINE CODE EDITOR COMPILER",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "This is an online code editor and compiler is to provide a web-based platform for developers to write, edit, and test their code in real-time, developers can write code in html css javascript programming languages, test it,  users will be able to save their code to the database, and see the output all within the same interface. This helps to streamline the development process, increase productivity.",
       tags: [
         {
-          name: "nextjs",
+          name: "react | redux | jwt",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "monaco editor",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "framer motion",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      image: codeEditor,
       source_code_link: "https://github.com/",
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, testimonials, projects };
